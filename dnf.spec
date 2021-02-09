@@ -66,7 +66,7 @@ BuildRequires:  python3-Sphinx
 BuildRequires:  python3-bugzilla
 BuildRequires:  systemd-rpm-macros
 Requires:       python3-dnf = %{version}-%{release}
-Recommends:     %{name}-lang >= %{version}
+Recommends:     %{name}-lang
 Recommends:     dnf-plugins-core
 Recommends:     %{yum_subpackage_name}
 Conflicts:      dnf-plugins-core < %{min_plugins_core}
