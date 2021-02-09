@@ -64,9 +64,6 @@ BuildRequires:  python3-Sphinx
 BuildRequires:  python3-bugzilla
 BuildRequires:  systemd-rpm-macros
 Requires:       python3-dnf = %{version}-%{release}
-Recommends:     %{name}-lang >= %{version}
-Recommends:     dnf-plugins-core
-Recommends:     %{yum_subpackage_name}
 Conflicts:      dnf-plugins-core < %{min_plugins_core}
 Provides:       dnf-command(autoremove)
 Provides:       dnf-command(check-update)
@@ -155,7 +152,6 @@ BuildRequires:  python3-libcomps >= %{libcomps_version}
 BuildRequires:  python3-libmodulemd >= %{libmodulemd_version}
 BuildRequires:  python3-nose
 BuildRequires:  python3-rpm >= %{rpm_version}
-Recommends:     (python3-dbus-python if NetworkManager)
 Requires:       deltarpm
 Requires:       dnf-data = %{version}-%{release}
 Requires:       python3-curses
@@ -164,7 +160,6 @@ Requires:       python3-hawkey >= %{hawkey_version}
 Requires:       python3-libcomps >= %{libcomps_version}
 Requires:       python3-libmodulemd >= %{libmodulemd_version}
 Requires:       python3-rpm >= %{rpm_version}
-Recommends:     bash-completion
 # DNF 2.0 doesn't work with old plugins
 Conflicts:      python3-dnf-plugins-core < %{min_plugins_core}
 Conflicts:      python3-dnf-plugins-extras-common < %{min_plugins_extras}
@@ -391,9 +386,6 @@ BuildRequires:  python3-Sphinx
 BuildRequires:  python3-bugzilla
 BuildRequires:  systemd-rpm-macros
 Requires:       python3-dnf = %{version}-%{release}
-Recommends:     %{name}-lang
-Recommends:     dnf-plugins-core
-Recommends:     %{yum_subpackage_name}
 Conflicts:      dnf-plugins-core < %{min_plugins_core}
 Provides:       dnf-command(autoremove)
 Provides:       dnf-command(check-update)
@@ -429,7 +421,6 @@ Summary:        Common data and configuration files for DNF
 Group:          System/Packages
 Obsoletes:      dnf-conf < 4.4.2
 Provides:       dnf-conf = %{version}-%{release}
-Recommends:     logrotate
 
 %description data
 This package provides the common data and configuration files for DNF.
@@ -482,7 +473,6 @@ BuildRequires:  python3-libcomps >= %{libcomps_version}
 BuildRequires:  python3-libmodulemd >= %{libmodulemd_version}
 BuildRequires:  python3-nose
 BuildRequires:  python3-rpm >= %{rpm_version}
-Recommends:     (python3-dbus-python if NetworkManager)
 Requires:       deltarpm
 Requires:       dnf-data = %{version}-%{release}
 Requires:       python3-curses
@@ -491,7 +481,6 @@ Requires:       python3-hawkey >= %{hawkey_version}
 Requires:       python3-libcomps >= %{libcomps_version}
 Requires:       python3-libmodulemd >= %{libmodulemd_version}
 Requires:       python3-rpm >= %{rpm_version}
-Recommends:     bash-completion
 # DNF 2.0 doesn't work with old plugins
 Conflicts:      python3-dnf-plugins-core < %{min_plugins_core}
 Conflicts:      python3-dnf-plugins-extras-common < %{min_plugins_extras}
