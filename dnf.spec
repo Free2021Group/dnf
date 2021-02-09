@@ -55,7 +55,7 @@ Summary:        Package manager forked from Yum, using libsolv as a dependency r
 License:        GPL-2.0-or-later AND GPL-2.0-only
 Group:          System/Packages
 URL:            https://github.com/rpm-software-management/dnf
-Source0:        %{url}/archive/%{version}/dnf%{name}-%{version}.tar.gz
+Source0:        %{url}/archive/%{version}/dnf%{name}-%{version}4.6.0.tar.gz
 
 BuildRequires:  bash-completion
 BuildRequires:  cmake
