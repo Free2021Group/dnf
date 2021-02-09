@@ -99,7 +99,6 @@ Summary:        Common data and configuration files for DNF
 Group:          System/Packages
 Obsoletes:      dnf-conf < 4.4.2
 Provides:       dnf-conf = %{version}-%{release}
-Recommends:     logrotate
 
 %description data
 This package provides the common data and configuration files for DNF.
